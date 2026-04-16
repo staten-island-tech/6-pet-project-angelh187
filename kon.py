@@ -1,26 +1,4 @@
-""" class pets:
-    def __init__(self,name,hunger,happiness):
-        self.name = name
-        self.hunger = hunger
-        self.happiness = happiness
 
-Kon = pets("Kon")
-
-action = input("What do you want to do with Mr.Orange? Feed, play or say Hi. ")
-
-
-def hunger(self):
-    self.hunger = 0
-    if action == "Feed":
-        print("You fed the kitty cat!")
-        self.hunger += 5
-
-def happiness(self):
-    self.happiness = 0
-    if action == "Play":
-        print("You made the Kon happy!")
-        self.happiness += 5 """
-                  
 """ class Calculator():
     def add(x,y):
         print( x + y)
@@ -59,32 +37,50 @@ class pet:
         self.hunger = hunger
         self.happiness = happiness
         self.play = play
-        name = "Kon"
 
-    interaction = True
+    def food(self):
 
+
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+        """     interaction = True
     while interaction == True:
-        action = (input("What do you want to do with mr orange?"))
-    def hunger(self):
-        hunger = 100
-    if action == "Feed":
-        print("You fed Kon! You decreased his hunger by 40!")
-        hunger -= 40
-    def happiness(self):
-        happiness = 0 
-    if action == "Pet":
-        print("You petted Kon! He is now very happy! +30 happiness.")
-        happiness += 30
-    def play(self):
-        play = 0
-    if action == "Play":
-        print("You played with Kon! He is now more playful! +25 fun")
-        play += 25
-    question = (input("Do you still want to interact with Kon?"))
-    if question == "Yes":
-        interaction = True
-    elif question == "No":
-        interaction = False
+        action = (input("What do you want to do with mr orange?  "))
+        def hunger(self):
+        if action == "Feed":
+            print("You fed Kon! You decreased his hunger by 40!")
+            self.hunger += 20
+            def happiness(self):
+                happi = 0 
+        elif action == "Pet":
+                print("You petted Kon! He is now very happy! +30 happiness.")
+                happi += 30
+                def play(self):
+        elif action == "Play":
+                print("You played with Kon! He is now more playful! +25 fun")
+                plays += 25
+                question = (input("Do you still want to interact with Kon?   "))
+                if question == "Yes":
+                    interaction = True
+                elif question == "No":
+                    interaction = False """
 
     
 
