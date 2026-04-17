@@ -32,17 +32,50 @@ print(Kon.__dict__) """
         print(f"{self.owner} has ${self._balance}") """
 
 class pet:
-    def _init_(self,name,happiness, hunger, play):
+    def __init__(self,name,happiness,hunger):
         self.name = name
         self.hunger = hunger
         self.happiness = happiness
-        self.play = play
-
+    def names(self):
+        print("The cats name is Kon, he is happy to meet you!")
     def food(self):
+        print("kon is much less hungry now!")
+        self.hunger -= 10
+    def happinesses(self):
+        print("The cat feels much better after a pet.")
+        self.happiness += 10
+
+Kon = pet("Kon",0,100)
+
+con = True
+while con:
+    action = (input("What do you want to do with Kon? [Pet, Feed or Talk] "))
+    if action == "Pet":
+        happiness += 20
+        print("The cat feels much better after a pet.")
+    elif action == "Feed":
+        print("kon is much less hungry now!")
+        hunger -= 10
+    elif action == "Talk":
+        print("The cats name is Kon, he is happy to meet you!")
+        hunger += 5
+        happiness += 5
+    Cont = (input("Do you want to continue interacting wit Kon?[Yes or No] "))
+    if Cont == "Yes":
+        con = True
+    elif Cont == "No":
+        con == False
 
 
 
 
+
+    
+
+
+
+
+
    
    
    
@@ -57,10 +90,10 @@ class pet:
    
    
    
+
    
    
-   
-        """     interaction = True
+"""     interaction = True
     while interaction == True:
         action = (input("What do you want to do with mr orange?  "))
         def hunger(self):
