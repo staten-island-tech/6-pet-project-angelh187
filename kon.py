@@ -45,32 +45,34 @@ class pet:
 
 
 Kon = pet("Kon",0,100)
-    
+print("Meet the orange cat!")  
 con = True
 hunger = 100
 happiness = 0
 while con == True:
-    action = (input("What do you want to do with Kon? [Pet, Feed or Talk] "))
+    action = (input("What do you want to do with orange? [Pet, Feed or Talk]:  "))
     if action == "Pet":
         happiness += 20
-        print("The cat feels much better after a pet.")
+        print("The cat feels much better after a pet :3")
     elif action == "Feed":
-        print("kon is much less hungry now!")
+        print("kon is much less hungry now! :D")
         hunger -= 10
     elif action == "Talk":
-        print("The cats name is Kon, he is happy to meet you!")
+        print("Meow, meow meow meow meow! (The cats name is Kon, he is happy to meet you!)")
         hunger += 5
         happiness += 5
+    else:
+        print("Please select one of the three options above.")
         
-    Cont = (input("Do you want to continue interacting wit Kon?[Yes or No] "))
-    if Cont == "Yes" or "yes":
+    Cont = (input("Do you want to continue interacting with Kon? [Yes or No]:  "))
+    if Cont == "Yes":
         con = True
     else:
         break
 
 print(f"Kons hunger level is", [hunger])
 print(f"Kons happiness level is",[happiness])
-print("Thank you for interacting with Kon! Meow")
+print("Thank you for interacting with Kon! Meow :3")
 
 
 
