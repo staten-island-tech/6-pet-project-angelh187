@@ -40,15 +40,16 @@ class pet:
         print("The cats name is Kon, he is happy to meet you!")
     def food(self):
         print("kon is much less hungry now!")
-        self.hunger -= 10
     def happinesses(self):
         print("The cat feels much better after a pet.")
-        self.happiness += 10
+
 
 Kon = pet("Kon",0,100)
-
+    
 con = True
-while con:
+hunger = 100
+happiness = 0
+while con == True:
     action = (input("What do you want to do with Kon? [Pet, Feed or Talk] "))
     if action == "Pet":
         happiness += 20
@@ -60,11 +61,15 @@ while con:
         print("The cats name is Kon, he is happy to meet you!")
         hunger += 5
         happiness += 5
+        
     Cont = (input("Do you want to continue interacting wit Kon?[Yes or No] "))
     if Cont == "Yes":
         con = True
-    elif Cont == "No":
-        con == False
+    else:
+        break
+        
+
+print(hunger)
 
 
 
