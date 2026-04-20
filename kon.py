@@ -63,13 +63,14 @@ while con == True:
         happiness += 5
         
     Cont = (input("Do you want to continue interacting wit Kon?[Yes or No] "))
-    if Cont == "Yes":
+    if Cont == "Yes" or "yes":
         con = True
     else:
         break
-        
 
-print(hunger)
+print(f"Kons hunger level is", [hunger])
+print(f"Kons happiness level is",[happiness])
+print("Thank you for interacting with Kon! Meow")
 
 
 
